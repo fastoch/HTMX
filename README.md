@@ -8,4 +8,7 @@ Today we're going to look at how HTMX makes it easy to build a simple CRUD appli
 >[!note]
 >CRUD = create / read / update / delete
 
+>[!warning]
+>This tutorial is for people that already know HTML and a little bit of JavaScript.
+
 ## 
