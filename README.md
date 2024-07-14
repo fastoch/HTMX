@@ -3,7 +3,7 @@
 Dave Gray teaches code  
 https://www.youtube.com/watch?v=te_lYPEDycc  
 
-Today we're going to look at how HTMX makes it easy to build a simple CRUD application.  
+Today we're going to look at how HTMX makes it easy to build a simple Todo CRUD application.  
 
 >[!note]
 >CRUD = create / read / update / delete
@@ -23,4 +23,23 @@ To install it: https://htmx.org/docs/#installing
 >[!important]
 >HTMX does require a server (a backend). If you're not familiar with backend development, checkout Dave Gray's Node.js course on youtube. 
 
+---
+
+## Code sample
+
+index.html
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTMX Todo</title>
+</head>
+
+<body>
+
+</body>
+```
 
