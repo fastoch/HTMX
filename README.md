@@ -27,7 +27,7 @@ To install it: https://htmx.org/docs/#installing
 
 ## Code sample
 
-After having downloaded a copy of `htmx.min.js` from [unpkg.com](https://unpkg.com/htmx.org@2.0.1/dist/htmx.min.js), add it to the appropriate directory in your project and include it where necessary with a <script> tag:
+After having downloaded a copy of `htmx.min.js` from [unpkg.com](https://unpkg.com/htmx.org@2.0.1/dist/htmx.min.js), add it to the appropriate directory in your project and include it where necessary with a `<script>` tag:
 
 index.html
 ```html
@@ -49,4 +49,4 @@ index.html
 </body>
 ```
 
-@3/12
+@2/12
