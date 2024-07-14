@@ -27,6 +27,8 @@ To install it: https://htmx.org/docs/#installing
 
 ## Code sample
 
+After having downloaded a copy of `htmx.min.js` from [unpkg.com](https://unpkg.com/htmx.org@2.0.1/dist/htmx.min.js), add it to the appropriate directory in your project and include it where necessary with a <script> tag:
+
 index.html
 ```html
 <!DOCTYPE html>
@@ -36,11 +38,15 @@ index.html
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTMX Todo</title>
+  <script src="/path/to/htmx.min.js"></script>
 </head>
 
 <body>
+  <form hx-post="" hx-target="#todo-list">
 
+  </form>
+  <ol> </ol>
 </body>
 ```
 
-@2/12
+@3/12
