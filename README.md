@@ -53,8 +53,10 @@ index.html
 </html>
 ```
 
-The `hx-post`, `hg-target`, `hx-get `and `hx-trigger` attributes are unique to HTMX.  
-
+- The `hx-post`, `hg-target`, `hx-get `and `hx-trigger` attributes are unique to HTMX.  
+- when using HTMX, you need your backend server to send .html, not.json data.
+- the user submits a new todo via the front-end form and my backend server sends the corresponding list item to populate the ordered list
+- when the page loads, the todo list is updated
 
 
 
