@@ -13,7 +13,7 @@ Today we're going to look at how HTMX makes it easy to build a simple Todo CRUD 
 
 ---
 
-## What is it?
+## What is it? How to install it?
 
 HTMX is a dependency-free, browser-oriented javascript library.  
 It's a library that allows you to access modern browser features directly from HTML, rather than using javascript.  
@@ -25,7 +25,7 @@ To install it: https://htmx.org/docs/#installing
 
 ---
 
-## Code example (front-end)
+## Reviewing the HTMX Web page (front-end)
 
 After having downloaded a copy of `htmx.min.js` from [unpkg.com](https://unpkg.com/htmx.org@2.0.1/dist/htmx.min.js), add it to the appropriate  
 directory in your project and include it where necessary with a `<script>` tag:
@@ -67,7 +67,7 @@ What about the put method that we would use to update our todos with? And the de
 
 ---
 
-## Code example (back-end)
+## Server delivering HTML to HTMX (back-end)
 
 
 
