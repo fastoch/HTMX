@@ -53,6 +53,9 @@ index.html
 </html>
 ```
 
-The `hx-post` attribute is unique to HTMX.
+The `hx-post`, `hg-target`, `hx-get `and `hx-trigger` attributes are unique to HTMX.  
 
-@3/12
+
+
+
+@4/12
