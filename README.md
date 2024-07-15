@@ -21,7 +21,7 @@ It's a library that allows you to access modern browser features directly from H
 To install it: https://htmx.org/docs/#installing  
 
 >[!important]
->HTMX does require a server (a backend). If you're not familiar with backend development, checkout Dave Gray's Node.js course on youtube. 
+>HTMX requires a server (a backend). If you're not familiar with backend development, checkout Dave Gray's **Node.js** course on youtube. 
 
 ---
 
@@ -42,11 +42,13 @@ index.html
 </head>
 
 <body>
-  <form hx-post="" hx-target="#todo-list">
-
+  <form hx-post="http://localhost:3000/todo" hx-target="#todo-list">
+    <label></label>
+    <input>
+    <button></button>
   </form>
   <ol> </ol>
 </body>
 ```
 
-@2/12
+@3/12
