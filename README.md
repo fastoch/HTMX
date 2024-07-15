@@ -9,7 +9,7 @@ Today we're going to look at how HTMX makes it easy to build a simple Todo CRUD 
 >CRUD = create / read / update / delete
 
 >[!warning]
->This tutorial is for people that already know HTML and a little bit of JavaScript.
+>This tutorial is for people who already know HTML and a little bit of JavaScript.
 
 ---
 
