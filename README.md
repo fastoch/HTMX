@@ -69,6 +69,9 @@ What about the put method that we would use to update our todos with? And the de
 
 ## Server delivering HTML to HTMX (back-end)
 
+I have a simple Node.js server set up, and I'm using **Hono** for this.  
+Hono quickly allows you to set up a backend server. https://hono.dev/  
+
 
 
 
