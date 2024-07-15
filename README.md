@@ -25,9 +25,10 @@ To install it: https://htmx.org/docs/#installing
 
 ---
 
-## Code sample
+## Code example (front-end)
 
-After having downloaded a copy of `htmx.min.js` from [unpkg.com](https://unpkg.com/htmx.org@2.0.1/dist/htmx.min.js), add it to the appropriate directory in your project and include it where necessary with a `<script>` tag:
+After having downloaded a copy of `htmx.min.js` from [unpkg.com](https://unpkg.com/htmx.org@2.0.1/dist/htmx.min.js), add it to the appropriate  
+directory in your project and include it where necessary with a `<script>` tag:
 
 index.html
 ```html
@@ -55,9 +56,22 @@ index.html
 
 - The `hx-post`, `hg-target`, `hx-get `and `hx-trigger` attributes are unique to HTMX.  
 - when using HTMX, you need your backend server to send .html, not.json data.
-- the user submits a new todo via the front-end form and my backend server sends the corresponding list item to populate the ordered list
+- the user submits a new todo via the front-end form
+- and my backend server sends the corresponding list item to populate the ordered list
 - when the page loads, the todo list is updated
 
+---
+
+What about the put method that we would use to update our todos with? And the delete method?  
+>That needs to be in the list item elements themselves, and we can only see that by looking at the backend.
+
+---
+
+## Code example (back-end)
 
 
-@4/12
+
+
+
+
+@5/12
