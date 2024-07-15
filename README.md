@@ -30,7 +30,7 @@ To install it: https://htmx.org/docs/#installing
 After having downloaded a copy of `htmx.min.js` from [unpkg.com](https://unpkg.com/htmx.org@2.0.1/dist/htmx.min.js), add it to the appropriate  
 directory in your project and include it where necessary with a `<script>` tag:
 
-index.html
+*index.html*
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -72,9 +72,15 @@ What about the put method that we would use to update our todos with? And the de
 I have a simple Node.js server set up, and I'm using **Hono** for this.  
 Hono quickly allows you to set up a backend server. https://hono.dev/  
 
+*index.ts*
+```ts
+function getListItems(todos: typeof todoData.todos) {
+  return todos.sort
+}
+```
 
 
 
 
 
-@5/12
+@6/12
