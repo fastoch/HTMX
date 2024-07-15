@@ -43,12 +43,16 @@ index.html
 
 <body>
   <form hx-post="http://localhost:3000/todo" hx-target="#todo-list">
-    <label></label>
-    <input>
-    <button></button>
+    <label for="newTodo">New Todo:</label>
+    <input type="text" name="newTodo" id="newTodo" />
+    <button type="submit">Submit</button>
   </form>
-  <ol> </ol>
+  <ol id="todo-list" hx-get="http://localhost:3000/todo" hx-trigger="load"></ol>
 </body>
+
+</html>
 ```
+
+The `hx-post` attribute is unique to HTMX.
 
 @3/12
