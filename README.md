@@ -81,12 +81,16 @@ function getListItems(todos: typeof todoData.todos) {
         type="checkbox"
         id="todo_${todo.id}"
         ${todo.completed ? 'checked' : ''}
-        hx-put=
-        hx-trigger=
-        hx-target=
+        hx-put="http://localhost/todo:3000/${todo.id}"
+        hx-trigger="click"
+        hx-target="#todo-list"
       />
-      <label></label>
-      <button></button>
+      <label for="todo_${todo.id}" >${todo.title}</label>
+      <button
+        hx-delete=""
+        hx-trigger=""
+        hx-target=""
+      ></button>
     </li>`
   ))
 }
