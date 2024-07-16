@@ -77,10 +77,18 @@ Hono quickly allows you to set up a backend server. https://hono.dev/
 function getListItems(todos: typeof todoData.todos) {
   return todos.sort((a, b) => a.id - b.id).map(todo => (
     html`<li>
-      <input/>
+      <input
+        type="checkbox"
+        id="todo_${todo.id}"
+        ${todo.completed ? 'checked' : ''}
+        hx-put=
+        hx-trigger=
+        hx-target=
+      />
       <label></label>
       <button></button>
     </li>`
+  ))
 }
 ```
 
