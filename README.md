@@ -87,7 +87,7 @@ function getListItems(todos: typeof todoData.todos) {
       />
       <label for="todo_${todo.id}" >${todo.title}</label>
       <button
-        hx-delete=""
+        hx-delete="http://localhost/todo:3000/${todo.id}"
         hx-trigger="click"
         hx-target="#todo-list"
       >❌</button>
@@ -95,6 +95,12 @@ function getListItems(todos: typeof todoData.todos) {
   ))
 }
 ```
+
+### Code explanation
+
+
+
+
 
 >[!tip]
 >cross mark emoji copied from here: https://symbl.cc/en/274C/
