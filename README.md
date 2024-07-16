@@ -88,15 +88,16 @@ function getListItems(todos: typeof todoData.todos) {
       <label for="todo_${todo.id}" >${todo.title}</label>
       <button
         hx-delete=""
-        hx-trigger=""
-        hx-target=""
-      ></button>
+        hx-trigger="click"
+        hx-target="#todo-list"
+      >❌</button>
     </li>`
   ))
 }
 ```
 
-
+>[!tip]
+>cross mark emoji copied from here: https://symbl.cc/en/274C/
 
 
 
