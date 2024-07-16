@@ -75,7 +75,12 @@ Hono quickly allows you to set up a backend server. https://hono.dev/
 *index.ts*
 ```ts
 function getListItems(todos: typeof todoData.todos) {
-  return todos.sort
+  return todos.sort((a, b) => a.id - b.id).map(todo => (
+    html`<li>
+      <input/>
+      <label></label>
+      <button></button>
+    </li>`
 }
 ```
 
