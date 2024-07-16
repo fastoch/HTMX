@@ -98,6 +98,16 @@ function getListItems(todos: typeof todoData.todos) {
 
 ### Code explanation
 
+- `getListItems` is what we call a **helper** function.
+- `todos` is the parameter name
+- `: typeof todoData.todos` is a TypeScript type query for the todos parameter.
+  - It means the todos parameter should have the same type as `todoData.todos`.
+  - `todoData` is likely an object or module that contains a `todos` property.
+  - `todoData` probably contains the structure or initial data for the todo items.
+  - By using `typeof todoData.todos`, the function can adapt to changes in the `todoData.todos` structure without needing to update the type annotation manually.
+
+
+
 
 
 
