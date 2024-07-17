@@ -163,4 +163,9 @@ But the downside to that is it's fairly tied to your backend.
 - start your backend by opening a terminal, placing yourself in the app directory and running `npm run dev` 
 - then you can start the HTMX project just like you would start an HTML project, by starting the Live Server extension 
 
-Notice that no CSS was added to this project, we just wanted to focus on the functional aspect.
+---
+
+## Final thoughts
+
+- Notice that no CSS was added to this project, we just wanted to focus on the functional aspect.
+- Remember that your backend needs to send HTML, not JSON.
