@@ -116,11 +116,15 @@ function getListItems(todos: typeof todoData.todos) {
 We use the helper function `getListItems` inside of each of the methods. For example:
 ```ts
 app.delete('/todo/:id'), async (c) => {
-  const todoId = await c.req.param('id)
+  const todoId = await c.req.param('id')
   todoData.deleteTodo(Number(todoId))
 
-  
-}
+  const listItems = getListItems(todoData.todos)
+
+  return c.html(
+    html`${listItems}`
+  )
+})
 ```
 
 ---
