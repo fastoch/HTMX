@@ -108,24 +108,34 @@ function getListItems(todos: typeof todoData.todos) {
   - By using `typeof todoData.todos`, the function can adapt to changes in the `todoData.todos` structure without needing to update the type annotation manually.
 - The `<input>` element: As one of the todos are checked (click event), the `hx-put` attribute inside our input element will update the todo item (list item)
 - The `<button>` allows us to delete a todo item
+- The `hx-target` is always the todo list, where we want to see all of the todos listed out after any modification (created, updated, or deleted)
+
+>[!tip]
+>cross mark emoji copied from here: https://symbl.cc/en/274C/
+
+We use the helper function `getListItems` inside of each of the methods. For example:
+```ts
+app.delete('/todo/:id'), async (c) => {
+  const todoId = await c.req.param('id)
+  todoData.deleteTodo(Number(todoId))
+
+  
+}
+```
 
 ---
 
 ## CRUD methods
 
 We've covered all the methods now:
-- CREATE = ``
-- READ = ``
-- UPDATE = ``
-- DELETE = ``
+- CREATE = `hx-post`
+- READ = `hx-get`
+- UPDATE = `hx-put`
+- DELETE = `hx-delete`
 
 
 
 
 
->[!tip]
->cross mark emoji copied from here: https://symbl.cc/en/274C/
 
-
-
-@7/12
+@8/12
