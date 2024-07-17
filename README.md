@@ -110,11 +110,19 @@ function getListItems(todos: typeof todoData.todos) {
 - The `<button>` allows us to delete a todo item
 - The `hx-target` is always the todo list, where we want to see all of the todos listed out after any modification (created, updated, or deleted)
 
+---
+
 >[!tip]
 >cross mark emoji copied from here: https://symbl.cc/en/274C/
 
-We use the helper function `getListItems` inside of each of the methods. For example:
+---
+
+We use the helper function `getListItems` inside each of the methods. For example:
 ```ts
+app.put('/todo/:id'), async (c) => {
+  html`${listItems}`
+})
+
 app.delete('/todo/:id'), async (c) => {
   const todoId = await c.req.param('id')
   todoData.deleteTodo(Number(todoId))
@@ -127,17 +135,16 @@ app.delete('/todo/:id'), async (c) => {
 })
 ```
 
----
 
-## CRUD methods
+--- 
+
+### CRUD methods
 
 We've covered all the methods now:
 - CREATE = `hx-post`
 - READ = `hx-get`
 - UPDATE = `hx-put`
 - DELETE = `hx-delete`
-
-
 
 
 
