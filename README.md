@@ -155,5 +155,12 @@ By shifting much of the dynamic behavior to server-side logic, HTMX reduces the 
 
 But the downside to that is it's fairly tied to your backend.
 
+---
 
+## Running the project (in a dev environment)
 
+- You need to run your backend in one instance of VS Code, and your frontend in another.
+- start your backend by opening a terminal, placing yourself in the app directory and running `npm run dev` 
+- then you can start the HTMX project just like you would start an HTML project, by starting the Live Server extension 
+
+Notice that no CSS was added to this project, we just wanted to focus on the functional aspect.
