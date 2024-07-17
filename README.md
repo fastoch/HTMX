@@ -146,7 +146,14 @@ We've covered all the methods now:
 - UPDATE = `hx-put`
 - DELETE = `hx-delete`
 
+---
+
+## Thoughts on HTMX
+
+One of the key benefits of HTMX is to reduce the client-side complexity.  
+By shifting much of the dynamic behavior to server-side logic, HTMX reduces the complexity on the client side, resulting in cleaner, more maintainable code.  
+
+But the downside to that is it's fairly tied to your backend.
 
 
 
-@8/12
